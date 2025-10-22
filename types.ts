@@ -2,7 +2,6 @@
 export interface Verse {
   reference: string;
   arabic: string;
-  transliteration: string;
   translation: string;
 }
 

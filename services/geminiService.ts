@@ -1,8 +1,8 @@
 import type { Verse } from '../types';
 
 // The endpoint for our Netlify function.
-// Netlify automatically proxies requests from here to the function.
-const API_ENDPOINT = '/api/gemini';
+// This is the correct path for Netlify to find the deployed function.
+const API_ENDPOINT = '/.netlify/functions/gemini';
 
 /**
  * A helper function to make API calls to our secure Netlify function.

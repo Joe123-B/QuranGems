@@ -32,10 +32,6 @@ export const VerseCard: React.FC<VerseCardProps> = ({ verse, isPlaying, onPlayPa
             {verse.arabic}
           </p>
         </div>
-        <div className="mb-6">
-          <h4 className="font-semibold text-[var(--color-primary-text)] mb-2">Transliteration</h4>
-          <p className="text-[var(--color-text-muted)] italic leading-relaxed">{verse.transliteration}</p>
-        </div>
         <div className="mb-4">
           <h4 className="font-semibold text-[var(--color-primary-text)] mb-2">Translation</h4>
           <p className="text-[var(--color-text-main)] leading-relaxed">{verse.translation}</p>
