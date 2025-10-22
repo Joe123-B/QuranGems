@@ -17,6 +17,26 @@ const topVerses: Verse[] = [
     arabic: 'اللَّهُ لَا إِلَـٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ ۚ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ ۚ لَّهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ ۗ مَن ذَا الَّذِي يَشْفَعُ عِندَهُ إِلَّا بِإِذْنِهِ ۚ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ ۖ وَلَا يُحِيطُونَ بِشَيْءٍ مِّنْ عِلْمِهِ إِلَّا بِ مَا شَاءَ ۚ وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ ۖ وَلَا يَئُودُهُ حِفْظُهُمَا ۚ وَهُوَ الْعَلِيُّ الْعَظِيمُ',
     translation: 'Allah - there is no deity except Him, the Ever-Living, the Sustainer of [all] existence. Neither drowsiness overtakes Him nor sleep. To Him belongs whatever is in the heavens and whatever is on the earth. Who is it that can intercede with Him except by His permission? He knows what is [presently] before them and what will be after them, and they encompass not a thing of His knowledge except for what He wills. His Kursi extends over the heavens and the earth, and their preservation tires Him not. And He is the Most High, the Most Great.',
   },
+  {
+    reference: 'Surah Al-Baqarah, 2:285-286',
+    arabic: 'آمَنَ الرَّسُولُ بِمَا أُنزِلَ إِلَيْهِ مِن رَّبِّهِ وَالْمُؤْمِنُونَ ۚ كُلٌّ آمَنَ بِاللَّهِ وَمَلَائِكَتِهِ وَكُتُبِهِ وَرُسُلِهِ لَا نُفَرِّقُ بَيْنَ أَحَدٍ مِّنْ رُّسُلِهِ ۚ وَقَالُوا سَمِعْنَا وَأَطَعْنَا ۖ غُفْرَانَكَ رَبَّنَا وَإِلَيْكَ الْمَصِيرُ. لَا يُكَلِّفُ اللَّهُ نَفْسًا إِلَّا وُسْعَهَا ۚ لَهَا مَا كَسَبَتْ وَعَلَيْهَا مَا اكْتَسَبَتْ ۗ رَبَّنَا لَا تُؤَاخِذْنَا إِن نَّسِينَا أَوْ أَخْطَأْنَا ۚ رَبَّنَا وَلَا تَحْمِلْ عَلَيْنَا إِصْرًا كَمَا حَمَلْتَهُ عَلَى الَّذِينَ مِن قَبْلِنَا ۚ رَبَّنَا وَلَا تُحَمِّلْنَا مَا لَا طَاقَةَ لَنَا بِهِ ۖ وَاعْفُ عَنَّا وَغْفِرْ لَنَا وَارْحَمْنَا ۚ أَنتَ مَوْلَانَا فَانصُرْنَا عَلَى الْقَوْمِ الْكَافِرِينَ',
+    translation: 'The Messenger has believed in what was revealed to him from his Lord, and [so have] the believers. All of them have believed in Allah and His angels and His books and His messengers, [saying], "We make no distinction between any of His messengers." And they say, "We hear and we obey. [We seek] Your forgiveness, our Lord, and to You is the [final] destination." Allah does not charge a soul except [with that within] its capacity. It will have [the consequence of] what [good] it has gained, and it will bear [the consequence of] what [evil] it has earned. "Our Lord, do not impose blame upon us if we have forgotten or erred. Our Lord, and lay not upon us a burden like that which You laid upon those before us. Our Lord, and burden us not with that which we have no ability to bear. And pardon us; and forgive us; and have mercy upon us. You are our protector, so give us victory over the disbelieving people."',
+  },
+  {
+    reference: 'Surah Al-Ikhlas, 112:1-4',
+    arabic: 'قُلْ هُوَ اللَّهُ أَحَدٌ. اللَّهُ الصَّمَدُ. لَمْ يَلِدْ وَلَمْ يُولَدْ. وَلَمْ يَكُن لَّهُ كُفُوًا أَحَدٌ',
+    translation: 'Say, "He is Allah, [who is] One. Allah, the Eternal Refuge. He neither begets nor is born, Nor is there to Him any equivalent."',
+  },
+  {
+    reference: 'Surah Al-Falaq, 113:1-5',
+    arabic: 'قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ. مِن شَرِّ مَا خَلَقَ. وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ. وَمِن شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ. وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ',
+    translation: 'Say, "I seek refuge in the Lord of daybreak. From the evil of that which He created. And from the evil of darkness when it settles. And from the evil of the blowers in knots. And from the evil of an envier when he envies."',
+  },
+  {
+    reference: 'Surah An-Nas, 114:1-6',
+    arabic: 'قُلْ أَعُوذُ بِرَبِّ النَّاسِ. مَلِكِ النَّاسِ. إِلَٰهِ النَّاسِ. مِن شَرِّ الْوَسْوَاسِ الْخَنَّاسِ. الَّذِي يُوَسْوِسُ فِي صُدُورِ النَّاسِ. مِنَ الْجِنَّةِ وَالنَّاسِ',
+    translation: 'Say, "I seek refuge in the Lord of mankind, The Sovereign of mankind, The God of mankind, From the evil of the retreating whisperer - Who whispers in the breasts of mankind - From among the jinn and mankind."',
+  },
 ];
 
 const reciters = [
@@ -37,6 +57,7 @@ const App: React.FC = () => {
   const [isRandomVerseLoading, setIsRandomVerseLoading] = useState<boolean>(true);
   const [randomVerseError, setRandomVerseError] = useState<string | null>(null);
 
+  const [featuredVerse, setFeaturedVerse] = useState<Verse | null>(null);
   const [currentlyPlaying, setCurrentlyPlaying] = useState<string | null>(null);
   const [selectedReciter, setSelectedReciter] = useState<string>('ar.alafasy');
   const audioRef = useRef<HTMLAudioElement | null>(null);
@@ -116,6 +137,10 @@ const App: React.FC = () => {
   };
 
   useEffect(() => {
+    // Select a random featured verse on mount
+    const randomIndex = Math.floor(Math.random() * topVerses.length);
+    setFeaturedVerse(topVerses[randomIndex]);
+
     fetchRandomVerse();
 
     return () => {
@@ -167,23 +192,25 @@ const App: React.FC = () => {
         </section>
 
         <section id="top-verses" className="mb-12 md:mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-[var(--color-primary-text)] mb-8">Top Verses to Memorize</h2>
-          <div className="space-y-6">
-            {topVerses.map((verse, index) => (
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-[var(--color-primary-text)] mb-8">Featured Verse</h2>
+          <div className="space-y-6 max-w-4xl mx-auto">
+            {featuredVerse ? (
               <VerseCard 
-                key={index} 
-                verse={verse} 
-                isPlaying={currentlyPlaying === verse.reference}
+                key={featuredVerse.reference} 
+                verse={featuredVerse} 
+                isPlaying={currentlyPlaying === featuredVerse.reference}
                 onPlayPause={handlePlayPause}
               />
-            ))}
+            ) : (
+              <LoadingSpinner />
+            )}
           </div>
         </section>
 
         <section id="random-verse" className="mb-12 md:mb-16">
           <div className="text-center mb-8">
             <h2 className="text-3xl md:text-4xl font-bold text-[var(--color-primary-text)] mb-2">Discover a Verse</h2>
-            <p className="text-lg text-[var(--color-text-muted)]">Let a random verse from the Quran inspire you today.</p>
+            <p className="text-lg text-[var(--color-text-muted)]">Let a random passage from the Quran inspire you today.</p>
           </div>
           
           <div className="max-w-4xl mx-auto">

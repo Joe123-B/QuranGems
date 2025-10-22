@@ -1,3 +1,4 @@
+
 import { GoogleGenAI, Type } from "@google/genai";
 import type { Handler, HandlerEvent } from "@netlify/functions";
 
@@ -44,6 +45,7 @@ const handler: Handler = async (event: HandlerEvent) => {
     const { action, query } = body;
 
     let geminiResponse;
+    let isRandomVerse = false;
 
     switch (action) {
       case 'getPrayerVerses':
@@ -62,13 +64,15 @@ const handler: Handler = async (event: HandlerEvent) => {
         break;
 
       case 'getRandomVerse':
+        isRandomVerse = true;
         geminiResponse = await ai.models.generateContent({
           model: "gemini-2.5-flash",
           contents: "Provide one random, beautiful, and impactful passage from the Quran, consisting of about 5-8 verses, that offers wisdom, comfort, or inspiration. For the passage, provide the combined Arabic text, translation, and a reference that covers the entire range of verses (e.g., 'Surah Al-Baqarah, 2:285-286').",
           config: {
             systemInstruction: "You are an expert Islamic scholar. Provide one accurate Quranic verse or passage, including the Arabic text, an eloquent English translation, and the precise reference (Surah name, chapter:verse number range).",
             responseMimeType: "application/json",
-            responseSchema: verseSchema,
+            // Request an array with one item for better reliability from the model
+            responseSchema: { type: Type.ARRAY, items: verseSchema },
           },
         });
         break;
@@ -88,6 +92,20 @@ const handler: Handler = async (event: HandlerEvent) => {
         body: JSON.stringify({ error: 'AI service returned malformed data.' }),
       };
     }
+    
+    // If it was a random verse, extract the single verse from the array
+    if (isRandomVerse) {
+        if (Array.isArray(content) && content.length > 0) {
+            content = content[0];
+        } else {
+            console.error('Expected an array with one verse, but got:', content);
+            return {
+                statusCode: 500,
+                body: JSON.stringify({ error: 'AI service returned unexpected data format for random verse.' }),
+            };
+        }
+    }
+
 
     return {
       statusCode: 200,
