@@ -1,0 +1,5 @@
+{
+  "name": "Quranic Gems",
+  "description": "An application to learn top verses from the Quran and discover impactful verses for recitation during prayer, powered by the Gemini API.",
+  "requestFramePermissions": []
+}

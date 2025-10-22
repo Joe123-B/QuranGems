@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quranic Gems</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        /* Add a smooth transition for color changes */
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+      .font-arabic {
+        font-family: 'Noto Naskh Arabic', serif;
+      }
+
+      /* --- THEME SYSTEM using CSS Variables --- */
+      :root { /* Light Mode (Default) */
+        --color-bg: #f9fafb; /* gray-50 */
+        --color-text-main: #1f2937; /* gray-800 */
+        --color-text-muted: #4b5563; /* gray-600 */
+        --color-text-subtle: #6b7280; /* gray-500 */
+        --color-primary: #0d9488; /* teal-600 */
+        --color-primary-text: #115e59; /* teal-800 */
+        --color-primary-hover: #0f766e; /* teal-700 */
+        --color-accent: #ca8a04; /* yellow-600 */
+        --color-accent-hover: #a16207; /* yellow-700 */
+        --color-card-bg: #ffffff;
+        --color-card-footer-bg: #f0fdfa; /* teal-50 */
+        --color-border: #e5e7eb; /* gray-200 */
+        --color-input-bg: #ffffff;
+        --color-input-border: #d1d5db; /* gray-300 */
+        --color-ring: #14b8a6; /* teal-500 */
+        --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+      }
+
+      .dark { /* Dark Mode */
+        --color-bg: #111827; /* gray-900 */
+        --color-text-main: #f3f4f6; /* gray-100 */
+        --color-text-muted: #9ca3af; /* gray-400 */
+        --color-text-subtle: #6b7280; /* gray-500 */
+        --color-primary: #2dd4bf; /* teal-400 */
+        --color-primary-text: #5eead4; /* teal-300 */
+        --color-primary-hover: #14b8a6; /* teal-500 */
+        --color-accent: #facc15; /* yellow-400 */
+        --color-accent-hover: #eab308; /* yellow-500 */
+        --color-card-bg: #1f2937; /* gray-800 */
+        --color-card-footer-bg: #374151; /* gray-700/50 */
+        --color-border: #374151; /* gray-700 */
+        --color-input-bg: #374151; /* gray-700 */
+        --color-input-border: #4b5563; /* gray-600 */
+        --color-ring: #2dd4bf; /* teal-400 */
+        --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.4);
+        --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.4);
+      }
+
+      .sepia { /* Sepia Mode */
+        --color-bg: #f4f1e9;
+        --color-text-main: #5b4636;
+        --color-text-muted: #7f6a59;
+        --color-text-subtle: #948375;
+        --color-primary: #8c5a2b;
+        --color-primary-text: #6d4520;
+        --color-primary-hover: #7d4f21;
+        --color-accent: #c78846;
+        --color-accent-hover: #b8793a;
+        --color-card-bg: #fffbf2;
+        --color-card-footer-bg: #f9f6ef;
+        --color-border: #e5e0d4;
+        --color-input-bg: #fffbf2;
+        --color-input-border: #d8d1c4;
+        --color-ring: #8c5a2b;
+        --shadow: 0 4px 6px -1px rgb(91 70 54 / 0.1), 0 2px 4px -2px rgb(91 70 54 / 0.1);
+        --shadow-lg: 0 10px 15px -3px rgb(91 70 54 / 0.1), 0 4px 6px -4px rgb(91 70 54 / 0.1);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.25.0",
+    "vite": "https://aistudiocdn.com/vite@^7.1.11",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.0.4",
+    "@netlify/functions": "https://aistudiocdn.com/@netlify/functions@^5.0.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
